@@ -12,7 +12,7 @@
       .container {
         margin: 60px 110px;
         background-color: red;
-        height: 1000px;
+        /* height: 1000px; */
       }
       .container2 {
         margin: 90px 110px;
@@ -29,7 +29,7 @@
         text-align: center;
       }
       .removePadding {
-        margin-top: -18px;
+        margin-top: -10px;
       }
     </style>
   </head>
@@ -48,7 +48,7 @@
           requerer o CANCELAMENTO de minha filiação do <%= locals.nomePartido %>
           (<%= locals.siglaPartido %>) de <%= locals.municipio %>.
         </p>
-        <p class="fontStyle">
+        <p class="fontStyle removePadding">
           Por fim, encaminho, em apenso, comunicação de desfiliação já realizada
           ao Presidente da referida agremiação.
         </p>
@@ -60,7 +60,7 @@
       </div>
       <div class="margin">
         <p class="fontStyle center">______________________________</p>
-        <p class="fontStyle centergit"><%= locals.nomeEleitor %></p>
+        <p class="fontStyle center removePadding"><%= locals.nomeEleitor %></p>
       </div>
     </div>
     <br />
